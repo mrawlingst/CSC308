@@ -3,6 +3,7 @@ This repository contains all of my assignments and projects completed during Spr
 
 ## Table of Contents
 * Assignments
+    * [Assignment 01](./Assignment01/)
 * Projects
 
 
