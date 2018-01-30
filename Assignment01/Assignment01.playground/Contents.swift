@@ -1,9 +1,14 @@
-// Michael Rawlings
+// Author: Michael Rawlings
+// Date: 01/25/18
 // CSC 308 - Assignment 01
+// Description: Program to determine the lowest
+//          or highest price of a product in the
+//          product dictionary using a reference
+//          to a function passed through price()
 
 import Cocoa
 
-// Find the lowest priced product in dictionary and return the info (name and price of the product)
+// Find the lowest priced product in given dictionary and return the info (name and price of the product)
 func lowestPrice(products: [String: (String, Double)]) -> (String, Double)
 {
     let lowestProduct = products.min{a, b in a.value.1 < b.value.1}
@@ -11,7 +16,7 @@ func lowestPrice(products: [String: (String, Double)]) -> (String, Double)
     return (lowestProduct!.key, lowestProduct!.value.1)
 }
 
-// Find the highest priced product in dictionary and return the info (name and price of the product)
+// Find the highest priced product in given dictionary and return the info (name and price of the product)
 func highestPrice(products: [String: (String, Double)]) -> (String, Double)
 {
     let highestProduct = products.max{a, b in a.value.1 < b.value.1}
