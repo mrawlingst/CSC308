@@ -5,7 +5,7 @@ Write a travel guide application for iPhone 8 to advise the tourist attractions 
 * The cities and their attractions the application needs to consider include:
     * Lexington: Keenland, Arboretum
     * Chengdu: Panda, Pedestrian Street
-    * Chicago: Millenium Park, Skydeck, Cruise, Planetarium
+    * Chicago: Millennium Park, Skydeck, Cruise, Planetarium
     * Hongkong: Disneyland, Ocean Park, The Peak
 * According to the user's selection, the application displays the chosen city's name and attraction, as well as the corresponding picture.
 
