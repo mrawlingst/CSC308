@@ -6,6 +6,7 @@ This repository contains all of my assignments and projects completed during Spr
     * [Assignment 01](./Assignment01/)
     * [Assignment 02](./Assignment02/)
     * [Assignment 03](./Assignment03/)
+    * [Assignment 04](./Assignment04/)
 * Projects
 
 
