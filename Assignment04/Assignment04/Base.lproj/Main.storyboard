@@ -26,7 +26,7 @@
                                     <segment title="Infrared"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCI-BX-XBD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visible01" translatesAutoresizingMaskIntoConstraints="NO" id="FCI-BX-XBD">
                                 <rect key="frame" x="41" y="99" width="293" height="331"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -56,4 +56,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="visible01" width="720" height="576"/>
+    </resources>
 </document>
