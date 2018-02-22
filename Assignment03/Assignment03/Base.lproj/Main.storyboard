@@ -40,7 +40,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-Db-RDP">
                                 <rect key="frame" x="102" y="106" width="257" height="29"/>
@@ -106,7 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.63320370046059438" green="0.74899675168943225" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-Oa-qb5">
@@ -116,10 +116,22 @@
                                 <state key="normal" title="Get Report">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="generateReport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gr5-xq-hNS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="genderInput" destination="uRG-Db-RDP" id="3qZ-Q4-gp8"/>
+                        <outlet property="lengthUnitInput" destination="J0a-Ac-oDD" id="3xm-MK-YtO"/>
+                        <outlet property="nameInput" destination="bnf-7w-FA4" id="dN6-Vf-6NO"/>
+                        <outlet property="reportView" destination="z3L-M9-Mkg" id="YLS-nE-DoL"/>
+                        <outlet property="waistInput" destination="GcR-N1-xhp" id="9dW-KX-Z1R"/>
+                        <outlet property="weightInput" destination="ple-3S-lzs" id="axO-6M-qJl"/>
+                        <outlet property="weightUnitInput" destination="Civ-Iz-JDg" id="l9D-i8-80g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
