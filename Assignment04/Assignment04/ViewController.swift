@@ -76,9 +76,11 @@ class ViewController: UIViewController {
     // Change image and its animations when a type is selected
     @IBAction func imageTypeChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
+            // Visible
             imageView.image = visibleAnimationImages[0]
             imageView.animationImages = visibleAnimationImages
         } else {
+            // Infrared
             imageView.image = infraredAnimationImages[0]
             imageView.animationImages = infraredAnimationImages
         }
