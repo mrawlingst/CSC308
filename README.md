@@ -8,6 +8,8 @@ This repository contains all of my assignments and projects completed during Spr
     * [Assignment 03](./Assignment03/)
     * [Assignment 04](./Assignment04/)
 * Projects
+* Tests
+    * [Test 01](./Test01/)
 
 
 ## Credit
