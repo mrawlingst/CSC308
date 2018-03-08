@@ -7,7 +7,7 @@ Write a game for iPhone 8:
     * The buttons should have background images.
     * The application allows the users to click any two of these buttons.
 * Every time a button is clicked, its associated number should be revealed and displayed on the button, and the total number of dollars that the user has earned is displayed at the bottom of the screen (as in **Figure 2 and 3**).
-* After the user has clicked two buttons, another alert view is displayed to report the result of the game and allow the user to choose from playing again or exiting the game (as in **Figure 3).
+* After the user has clicked two buttons, another alert view is displayed to report the result of the game and allow the user to choose from playing again or exiting the game (as in **Figure 3**).
 
 ![example image](example.png)
 
