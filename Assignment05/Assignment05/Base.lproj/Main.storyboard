@@ -21,32 +21,62 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDQ-jS-25s">
                                 <rect key="frame" x="49" y="64" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vw-zQ-cl9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x4-gJ-AWw">
                                 <rect key="frame" x="220" y="64" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBK-DL-mxK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4E-CR-8ZB">
                                 <rect key="frame" x="49" y="200" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfp-vn-B9o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjc-ox-kBe">
                                 <rect key="frame" x="220" y="200" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNd-kW-Enn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-5N-51Z">
                                 <rect key="frame" x="49" y="336" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAr-36-HZE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8x-vT-MHw">
                                 <rect key="frame" x="220" y="336" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="dollar"/>
+                                <state key="normal" backgroundImage="dollar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dollarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uad-j5-HpF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edx-wW-JKs">
                                 <rect key="frame" x="171" y="617" width="32" height="30"/>
@@ -57,7 +87,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-WI-3yt">
-                                <rect key="frame" x="166" y="524" width="42" height="21"/>
+                                <rect key="frame" x="49" y="524" width="299" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,6 +97,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button0" destination="UDQ-jS-25s" id="uds-gY-sqq"/>
+                        <outlet property="button1" destination="1x4-gJ-AWw" id="pk5-ef-cmU"/>
+                        <outlet property="button2" destination="k4E-CR-8ZB" id="2Gl-Km-Ihv"/>
+                        <outlet property="button3" destination="vjc-ox-kBe" id="1QI-GJ-a0r"/>
+                        <outlet property="button4" destination="r2n-5N-51Z" id="A9V-z8-Cok"/>
+                        <outlet property="button5" destination="N8x-vT-MHw" id="8zq-oH-nqt"/>
+                        <outlet property="gameLabel" destination="eq7-WI-3yt" id="iVV-Uh-HQo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
