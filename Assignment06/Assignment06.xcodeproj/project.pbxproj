@@ -12,6 +12,7 @@
 		7614F7B0206142540012ADFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7614F7AE206142540012ADFD /* Main.storyboard */; };
 		7614F7B2206142540012ADFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7614F7B1206142540012ADFD /* Assets.xcassets */; };
 		7614F7B5206142540012ADFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7614F7B3206142540012ADFD /* LaunchScreen.storyboard */; };
+		7628AA5C20642B000063FEB7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628AA5B20642B000063FEB7 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7614F7B1206142540012ADFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7614F7B4206142540012ADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7614F7B6206142540012ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7628AA5B20642B000063FEB7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7614F7AA206142540012ADFD /* AppDelegate.swift */,
 				7614F7AC206142540012ADFD /* ViewController.swift */,
 				7614F7AE206142540012ADFD /* Main.storyboard */,
+				7628AA5B20642B000063FEB7 /* CategoryViewController.swift */,
 				7614F7B1206142540012ADFD /* Assets.xcassets */,
 				7614F7B3206142540012ADFD /* LaunchScreen.storyboard */,
 				7614F7B6206142540012ADFD /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7614F7AD206142540012ADFD /* ViewController.swift in Sources */,
+				7628AA5C20642B000063FEB7 /* CategoryViewController.swift in Sources */,
 				7614F7AB206142540012ADFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
