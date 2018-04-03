@@ -12,6 +12,8 @@
 		7634BEB32073BB0000D79B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7634BEB12073BB0000D79B16 /* Main.storyboard */; };
 		7634BEB52073BB0000D79B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7634BEB42073BB0000D79B16 /* Assets.xcassets */; };
 		7634BEB82073BB0000D79B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7634BEB62073BB0000D79B16 /* LaunchScreen.storyboard */; };
+		7634BEC02073E9C400D79B16 /* TextColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634BEBF2073E9C400D79B16 /* TextColorViewController.swift */; };
+		7634BEC22073E9D300D79B16 /* PlantAnimalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634BEC12073E9D300D79B16 /* PlantAnimalNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7634BEB42073BB0000D79B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7634BEB72073BB0000D79B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7634BEB92073BB0000D79B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7634BEBF2073E9C400D79B16 /* TextColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColorViewController.swift; sourceTree = "<group>"; };
+		7634BEC12073E9D300D79B16 /* PlantAnimalNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantAnimalNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				7634BEAD2073BB0000D79B16 /* AppDelegate.swift */,
 				7634BEAF2073BB0000D79B16 /* ViewController.swift */,
 				7634BEB12073BB0000D79B16 /* Main.storyboard */,
+				7634BEBF2073E9C400D79B16 /* TextColorViewController.swift */,
+				7634BEC12073E9D300D79B16 /* PlantAnimalNameViewController.swift */,
 				7634BEB42073BB0000D79B16 /* Assets.xcassets */,
 				7634BEB62073BB0000D79B16 /* LaunchScreen.storyboard */,
 				7634BEB92073BB0000D79B16 /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7634BEC02073E9C400D79B16 /* TextColorViewController.swift in Sources */,
 				7634BEB02073BB0000D79B16 /* ViewController.swift in Sources */,
 				7634BEAE2073BB0000D79B16 /* AppDelegate.swift in Sources */,
+				7634BEC22073E9D300D79B16 /* PlantAnimalNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
