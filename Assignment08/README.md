@@ -13,7 +13,11 @@ There are three scenes controlled by a **tab bar controller** in the application
 
  The calories burned per hour by activities can be found in the following table:
 
-IMAGES
+![table](table.png)
+![example](example.png)
+![example2](example2.png)
+![example3](example3.png)
+![example4](example4.png)
 
 **Hints**:
 * To allow the table view cells to include a label on the right side, use `Right Detail` as the style of the cells. You can use attribute `detailTextLabel` to access the detail label in a cell.
