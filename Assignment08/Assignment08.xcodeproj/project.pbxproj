@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		76D4F130207CF63800F8A18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F12F207CF63800F8A18B /* AppDelegate.swift */; };
-		76D4F132207CF63800F8A18B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F131207CF63800F8A18B /* ViewController.swift */; };
 		76D4F135207CF63800F8A18B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D4F133207CF63800F8A18B /* Main.storyboard */; };
 		76D4F137207CF63800F8A18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D4F136207CF63800F8A18B /* Assets.xcassets */; };
 		76D4F13A207CF63800F8A18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D4F138207CF63800F8A18B /* LaunchScreen.storyboard */; };
+		76D4F144207CFFAE00F8A18B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F143207CFFAE00F8A18B /* SettingsViewController.swift */; };
+		76D4F146207CFFF900F8A18B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F145207CFFF900F8A18B /* ReportViewController.swift */; };
+		76D4F148207D001700F8A18B /* LogActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F147207D001700F8A18B /* LogActivitiesTableViewController.swift */; };
+		76D4F14A207D004800F8A18B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4F149207D004800F8A18B /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76D4F12C207CF63800F8A18B /* Assignment08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment08.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D4F12F207CF63800F8A18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76D4F131207CF63800F8A18B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76D4F134207CF63800F8A18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76D4F136207CF63800F8A18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D4F139207CF63800F8A18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D4F13B207CF63800F8A18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D4F143207CFFAE00F8A18B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		76D4F145207CFFF900F8A18B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		76D4F147207D001700F8A18B /* LogActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		76D4F149207D004800F8A18B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				76D4F12F207CF63800F8A18B /* AppDelegate.swift */,
-				76D4F131207CF63800F8A18B /* ViewController.swift */,
 				76D4F133207CF63800F8A18B /* Main.storyboard */,
+				76D4F149207D004800F8A18B /* TabBarViewController.swift */,
 				76D4F136207CF63800F8A18B /* Assets.xcassets */,
 				76D4F138207CF63800F8A18B /* LaunchScreen.storyboard */,
 				76D4F13B207CF63800F8A18B /* Info.plist */,
+				76D4F143207CFFAE00F8A18B /* SettingsViewController.swift */,
+				76D4F145207CFFF900F8A18B /* ReportViewController.swift */,
+				76D4F147207D001700F8A18B /* LogActivitiesTableViewController.swift */,
 			);
 			path = Assignment08;
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D4F132207CF63800F8A18B /* ViewController.swift in Sources */,
 				76D4F130207CF63800F8A18B /* AppDelegate.swift in Sources */,
+				76D4F144207CFFAE00F8A18B /* SettingsViewController.swift in Sources */,
+				76D4F146207CFFF900F8A18B /* ReportViewController.swift in Sources */,
+				76D4F14A207D004800F8A18B /* TabBarViewController.swift in Sources */,
+				76D4F148207D001700F8A18B /* LogActivitiesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
