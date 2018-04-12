@@ -1,5 +1,5 @@
 ## Assignment 8
-Due 4/10
+Due 4/17
 
 Write an iPhone 8 application that logs the daily activities and reports the calories burned. The application also calculate the **Basic Metabolic Rate** (BMR) based on the gender, age, weight, and height.
 
