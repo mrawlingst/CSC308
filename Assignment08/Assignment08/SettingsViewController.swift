@@ -46,9 +46,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if sender === ageTextField {
             (parent as! TabBarViewController).age = Int(sender.text!)!
         } else if sender === weightTextField {
-            (parent as! TabBarViewController).weight = Int(sender.text!)!
+            (parent as! TabBarViewController).weight = Float(sender.text!)!
         } else {
-            (parent as! TabBarViewController).height = Int(sender.text!)!
+            (parent as! TabBarViewController).height = Float(sender.text!)!
         }
     }
     

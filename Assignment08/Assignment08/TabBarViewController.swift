@@ -3,10 +3,10 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    var gender = 1 // 0 - Male, 1 - Female
-    var age = 20
-    var weight = 55
-    var height = 165
+    var gender: Int = 1 // 0 - Male, 1 - Female
+    var age: Int = 20
+    var weight: Float = 55
+    var height: Float = 165
     
     override func viewDidLoad() {
         super.viewDidLoad()

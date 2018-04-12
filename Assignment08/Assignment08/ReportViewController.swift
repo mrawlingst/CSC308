@@ -1,35 +1,40 @@
-//
-//  ReportViewController.swift
-//  Assignment08
-//
-//  Created by Michael Rawlings on 4/10/18.
-//  Copyright © 2018 cs.eku.edu. All rights reserved.
-//
+// Author: Michael Rawlings
 
 import UIKit
 
 class ReportViewController: UIViewController {
-
+    @IBOutlet weak var reportLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        reportLabel.text = String(calculateBMR())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    func calculateBMR() -> Float {
+        let initialVC = parent as! TabBarViewController
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let age = initialVC.age
+        let weight = initialVC.weight
+        let height = initialVC.height
+        
+        var bmr = (10 * weight) + (6.25 * height) - (5 * Float(age))
+        
+        // Male
+        if initialVC.gender == 0 {
+            bmr += 5
+        }
+        //Female
+        else {
+            bmr -= 161
+        }
+        
+        return bmr
     }
-    */
-
 }
