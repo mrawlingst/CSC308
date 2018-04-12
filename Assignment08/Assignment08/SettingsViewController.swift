@@ -41,6 +41,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return row == 0 ? "Male" : "Female"
     }
     
+    // Update the gender selection
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        (parent as! TabBarViewController).gender = row
+    }
+    
     // Set values in parent controller when values are edited in text field
     @IBAction func updateSettings(_ sender: UITextField) {
         if sender === ageTextField {

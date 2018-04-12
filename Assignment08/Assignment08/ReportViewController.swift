@@ -17,6 +17,7 @@ class ReportViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // Calculate and return the resulting BMR
     func calculateBMR() -> Float {
         let initialVC = parent as! TabBarViewController
 
@@ -24,7 +25,10 @@ class ReportViewController: UIViewController {
         let weight = initialVC.weight
         let height = initialVC.height
         
-        var bmr = (10 * weight) + (6.25 * height) - (5 * Float(age))
+        // Swift doesnt seem to support PEMDAS in one line
+        var bmr = 10 * weight
+        bmr += 6.25 * height
+        bmr -= 5 * Float(age)
         
         // Male
         if initialVC.gender == 0 {
