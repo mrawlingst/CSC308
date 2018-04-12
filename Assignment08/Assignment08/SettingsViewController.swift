@@ -41,11 +41,19 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return row == 0 ? "Male" : "Female"
     }
     
+    // Set values in parent controller when values are edited in text field
     @IBAction func updateSettings(_ sender: UITextField) {
-        (parent as! TabBarViewController).age = Int(sender.text!)!
+        if sender === ageTextField {
+            (parent as! TabBarViewController).age = Int(sender.text!)!
+        } else if sender === weightTextField {
+            (parent as! TabBarViewController).weight = Int(sender.text!)!
+        } else {
+            (parent as! TabBarViewController).height = Int(sender.text!)!
+        }
     }
     
-    @IBAction func dismissKeyboard(_ sender: UITextField) {
+    // Hide the keyboard when user clicks outside
+    @IBAction func dismissKeyboard(_ sender: UIButton) {
         self.view.endEditing(true)
     }
 }
