@@ -1,95 +1,80 @@
-//
-//  LogActivitiesTableViewController.swift
-//  Assignment08
-//
-//  Created by Michael Rawlings on 4/10/18.
-//  Copyright © 2018 cs.eku.edu. All rights reserved.
-//
+// Author: Michael Rawlings
+// Date: 04/17/18
+// CSC 308 - Assignment 07
+// Description: An app that calculates your BMR
+//              and total calories user has burned
+//              through activies which user logs
+//              in hours.
 
 import UIKit
 
 class LogActivitiesTableViewController: UITableViewController {
-
+    // Categories available
+    let categories = ["Conditioning Exercises", "Dancing", "Running", "Sports"]
+    // Activities in each category
+    let activities = [
+        "Conditioning Exercises": ["Bicycling", "Rope Skipping", "Pilates", "Yoga"],
+        "Dancing": ["Ballet", "Ballroom Dancing"],
+        "Running": ["Marathon", "Jogging"],
+        "Sports": ["Badminton", "Basketball", "Bowling", "Boxing", "Fencing"]
+    ]
+    
+    // Used to access data (activityHours and activityCalories)
+    var initialVC: TabBarViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initialVC = (parent as! TabBarViewController)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
+    // Number of categories
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return categories.count
+    }
+    
+    // Set title of section for each category
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return categories[section]
     }
 
+    // Number of rows in each section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return activities[categories[section]]!.count
     }
-
-    /*
+    
+    // Set left and right label (activity and hours spent)
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell")
+        
+        let exercise = activities[categories[indexPath.section]]![indexPath.row]
+        let hours = initialVC!.activityHours[exercise] == 0.0 ? "" : (initialVC?.activityHours[exercise]?.description)! + " hours"
+        cell!.textLabel!.text = exercise
+        cell!.detailTextLabel!.text = hours
+        
+        return cell!
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    // Create and present an alert that askes user to input hours logged for the activity
+    // Only shows decimal pad keyboard
+    // When user presses OK, the rows will be refreshed
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Activity Duration", message: "How many hours did you exercise?", preferredStyle: .alert)
+        alertController.addTextField { (textField) in textField.text = "" }
+        alertController.textFields![0].keyboardType = UIKeyboardType.decimalPad
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { (alertAction: UIAlertAction) in
+            let value: Double = Double(alertController.textFields![0].text!)!
+            let exercise = self.activities[self.categories[indexPath.section]]![indexPath.row]
+            self.initialVC!.activityHours[exercise] = value
+            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        })
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
