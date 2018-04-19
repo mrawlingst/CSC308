@@ -1,10 +1,4 @@
-// Author: Michael Rawlings
-// Date: 04/17/18
-// CSC 308 - Assignment 07
-// Description: An app that calculates your BMR
-//              and total calories user has burned
-//              through activies which user logs
-//              in hours.
+S
 
 import UIKit
 
