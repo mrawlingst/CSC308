@@ -74,5 +74,9 @@ class ViewController: UIViewController {
         
         return bodyFat
     }
+    
+    @IBAction func dismissKeyboard(_ sender: UIButton) {
+        self.view.endEditing(true)
+    }
 }
 
