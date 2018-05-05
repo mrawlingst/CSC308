@@ -13,6 +13,10 @@
 		76768F4E209CF6A00074ADA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76768F4D209CF6A00074ADA5 /* Assets.xcassets */; };
 		76768F51209CF6A00074ADA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76768F4F209CF6A00074ADA5 /* LaunchScreen.storyboard */; };
 		76768F5B209CF9720074ADA5 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768F5A209CF9720074ADA5 /* SpendingViewController.swift */; };
+		76DA33A5209D3F750088066D /* MonthsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA33A4209D3F750088066D /* MonthsTableViewController.swift */; };
+		76DA33A7209D42280088066D /* TransactionNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA33A6209D42280088066D /* TransactionNavigationViewController.swift */; };
+		76DA33A9209D44DD0088066D /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA33A8209D44DD0088066D /* CategoryTableViewController.swift */; };
+		76DA33AB209D48890088066D /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA33AA209D48890088066D /* TransactionListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		76768F50209CF6A00074ADA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76768F52209CF6A00074ADA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76768F5A209CF9720074ADA5 /* SpendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		76DA33A4209D3F750088066D /* MonthsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsTableViewController.swift; sourceTree = "<group>"; };
+		76DA33A6209D42280088066D /* TransactionNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionNavigationViewController.swift; sourceTree = "<group>"; };
+		76DA33A8209D44DD0088066D /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		76DA33AA209D48890088066D /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				76768F43209CF6A00074ADA5 /* AppDelegate.swift */,
 				76768F47209CF6A00074ADA5 /* Main.storyboard */,
+				76DA33A6209D42280088066D /* TransactionNavigationViewController.swift */,
+				76DA33A4209D3F750088066D /* MonthsTableViewController.swift */,
 				76768F4D209CF6A00074ADA5 /* Assets.xcassets */,
 				76768F4F209CF6A00074ADA5 /* LaunchScreen.storyboard */,
 				76768F52209CF6A00074ADA5 /* Info.plist */,
 				76768F4A209CF6A00074ADA5 /* Test03.xcdatamodeld */,
 				76768F5A209CF9720074ADA5 /* SpendingViewController.swift */,
+				76DA33A8209D44DD0088066D /* CategoryTableViewController.swift */,
+				76DA33AA209D48890088066D /* TransactionListViewController.swift */,
 			);
 			path = Test03;
 			sourceTree = "<group>";
@@ -139,9 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DA33AB209D48890088066D /* TransactionListViewController.swift in Sources */,
+				76DA33A7209D42280088066D /* TransactionNavigationViewController.swift in Sources */,
 				76768F4C209CF6A00074ADA5 /* Test03.xcdatamodeld in Sources */,
 				76768F5B209CF9720074ADA5 /* SpendingViewController.swift in Sources */,
+				76DA33A5209D3F750088066D /* MonthsTableViewController.swift in Sources */,
 				76768F44209CF6A00074ADA5 /* AppDelegate.swift in Sources */,
+				76DA33A9209D44DD0088066D /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
